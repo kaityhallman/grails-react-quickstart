@@ -2,12 +2,13 @@ var path = require('path');
 
 module.exports = {
     entry: {
-        index: './src/main/webapp/app/app.js'
+        index: './src/main/webapp/app/app.js',
+        garage: './src/main/webapp/app/garage.js'
     },
     output: {
         path: './grails-app/assets/javascripts',
         publicPath: '/assets/',
-        filename: 'bundle.js'
+        filename: 'bundle-[name].js'
     },
     module: {
         loaders: [
@@ -30,4 +31,3 @@ module.exports = {
         ]
     }
 };
-
